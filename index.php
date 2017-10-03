@@ -35,16 +35,16 @@
           <form method="POST" action="logging.php">
             <div class="form-group">
               <label for="exampleInputEmail1">Username </label>
-              <input type="text" name="username" placeholder="user name" value="" class="form-control">
+              <input type="text" name="username" placeholder="user name" value="" class="form-control" required="">
             </div>
             <div class="form-group">
               <label>Password</label>
-              <input type="password" class="form-control"  name="password" value="" placeholder="Password">
+              <input type="password" class="form-control"  name="password" value="" placeholder="Password" required="">
             </div>
              <div class="form-group">
               <label>User type</label>
-              <select name="type" class="form-control" >            
-                  <option value="">Select User Type</option>
+              <select name="type" class="form-control"  required="">            
+                  <option >Select User Type</option>
                   <option value ="employee">Employee</option>
                   <option value ="admin">Admin</option>
                   <option value ="user">User</option>

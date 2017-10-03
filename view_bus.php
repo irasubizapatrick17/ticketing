@@ -144,7 +144,7 @@
                         include 'connect.php';
                         
                         $n=0;
-                        $sql2 = $con ->query("SELECT * FROM  buses");
+                        $sql2 = $con ->query("SELECT * FROM  buses ");
                         $count = mysqli_num_rows($sql2);
                         if($count > 0)
                         {
@@ -161,7 +161,7 @@
                                 echo '
                                     &nbsp;&nbsp;&nbsp;
                                 <a href="edit_bus.php?id='.$row['id'].'"><i class="fa fa-pencil text-primary"></i></a>
-                                <a href="deletebus.php?deleteid='.$row['id'].'"><i class="fa fa-trash-o text-danger"></i></a>';
+                                <a href="deletebus.php?id='.$row['id'].'"><i class="fa fa-trash-o text-danger"></i></a>';
                                 ?>
                                     
                             </td>

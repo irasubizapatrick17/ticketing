@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
 						echo "Invalid Username Or Password !!";
 						unset($_POST['submit']);
 						$error_login=1;
-						include 'admin.php';
+						include 'index.php';
 					}
 					break;
 		case "employee":

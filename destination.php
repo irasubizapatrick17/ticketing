@@ -24,7 +24,9 @@
 
 </head>
 
+
 <body>
+
 
     <div id="wrapper">
 
@@ -132,22 +134,28 @@
 
                         <form role="form">
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label> From</label>
                                 <select class="form-control" name="plate_number"> 
-                                	<option>Kigali</option>
+                                	<option value="Kigali">Kigali</option>
+                                    <option value="Kigali">Kigali</option>
+
                                 </select>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <label> To</label>
                                 <select class="form-control" name="plate_number"> 
-                                	<option>Butare</option>
+                                	<option value="Butare">Butare</option>
                                 </select>
+                            </div>
+                            <div class="col-md-4">
+                            <label>Price</label>
+                            <input type="text" name="price" class="form-control" placeholder="Enter trip amount">
                             </div>
                             <br>
                             </br>
                             <div class="col-md-12" style="margin-top: 2%; margin-left: 44%;">
-                            <button type="submit" class="btn btn-success">Save </button>
+                            <button type="submit" name="submit" class="btn btn-success">Save </button>
                             <button type="reset" class="btn btn-danger">Reset </button>
                             </div>
                         </form>
